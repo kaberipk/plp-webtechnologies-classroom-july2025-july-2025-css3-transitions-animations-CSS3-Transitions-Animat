@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style/style.css">
+        <title>CSS3 & JavaScript Animation Showcase</title>
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <h1>CSS3 & JavaScript Animation Showcase</h1>
+            <p>Explore the power of CSS3 animations combined with JavaScript interactivity</p>
+        </header>
+         <!-- Part 1: CSS3 Animations -->
+        <section class="section">
+            <h2>🎨 CSS3 Transitions and Animations</h2>
+            <p>Hover over buttons and watch the smooth transitions. Each box demonstrates a different CSS animation.</p>
+            
+            <div class="controls">
+                <button class="btn">Hover Me</button>
+                <button class="btn">Smooth Transition</button>
+                <button class="btn">Color Shift</button>
+            </div>
+            <div class="demo-container">
+                <div class="box pulse">Pulse</div>
+                <div class="box bounce">Bounce</div>
+                <div class="box spin">Spin</div>
+                <div class="box color-change">Colors</div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section class="section">
+            <h2>📚 JavaScript Functions</h2>
+            <p>These buttons trigger JavaScript functions with parameters and return values. Check the browser console for output.</p>
+            
+            <div class="controls">
+                <button class="btn" onclick="calculateArea(5, 8)">Calculate Area</button>
+                <button class="btn" onclick="stringManipulation('Hello World')">String Manipulation</button>
+                <button class="btn" onclick="checkScope()">Check Scope</button>
+            </div>
+            
+            <div id="output" class="output-container">
+                Output will appear here...
+            </div>
+        </section>
+        
+        <!-- Part 3: Combined CSS & JavaScript -->
+        <section class="section">
+            <h2>🎬 Combined CSS Animations with JavaScript</h2>
+            <p>Use JavaScript to dynamically trigger CSS animations and control the animation state.</p>
+            
+            <div class="controls">
+                <button class="btn" onclick="triggerAnimation('pulse')">Trigger Pulse</button>
+                <button class="btn" onclick="triggerAnimation('bounce')">Trigger Bounce</button>
+                <button class="btn" onclick="triggerAnimation('spin')">Trigger Spin</button>
+                <button class="btn" onclick="toggleCardFlip()">Flip Card</button>
+                <button class="btn" onclick="showModal()">Show Modal</button>
+            </div>
+            
+            <div class="demo-container">
+                <div class="box" id="animated-box">Animate Me!</div>
+                
+                <div class="card" id="flip-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Front</h3>
+                            <p>Click to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Back</h3>
+                            <p>Hello there!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="hideModal()">×</button>
+            <h2>Animated Modal</h2>
+            <p>This modal uses a CSS animation triggered by JavaScript!</p>
+            <button class="btn" onclick="hideModal()">Close</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>CSS3 & JavaScript Animation Showcase | Created for educational purposes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
